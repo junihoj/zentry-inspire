@@ -41,9 +41,9 @@ export const BentoTilt = ({ children, className = "" }: Props) => {
 
 type BentoCardProps = {
   src: string;
-  title: any;
+  title: React.ReactNode;
   description: string;
-  isComingSoon: any;
+  isComingSoon: boolean;
 };
 
 export const BentoCard = ({

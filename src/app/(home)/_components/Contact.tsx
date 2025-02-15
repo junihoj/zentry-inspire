@@ -1,3 +1,4 @@
+import Image from "next/image";
 import AnimatedTitle from "./AnimatedTitle";
 import Button from "./Button";
 
@@ -9,7 +10,14 @@ const ImageClipBox = ({
   clipClass: string;
 }) => (
   <div className={clipClass}>
-    <img src={src} />
+    {/* <img src={src} /> */}
+    <Image
+      src="img/about.webp"
+      alt="Background"
+      className="w-full h-full"
+      width={100}
+      height={100}
+    />
   </div>
 );
 
